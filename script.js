@@ -47,8 +47,11 @@ function addTask(taskData) {
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete";
 
+    const taskTextElement = document.createElement("span");
+    taskTextElement.textContent = taskData.text;
+
     task.appendChild(checkbox);
-    task.append(taskData.text);
+    task.appendChild(taskTextElement);
 
     taskRow.appendChild(task);
     taskRow.appendChild(deleteButton);

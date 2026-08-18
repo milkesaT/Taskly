@@ -82,3 +82,8 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
+.task input:checked + span {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    opacity: 0.6;
+}
